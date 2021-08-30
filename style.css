@@ -1,0 +1,370 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .clear {
+    clear: left;
+  }
+  
+  .container {     
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+
+    /* ========= CSS DIV class header ========= */
+
+
+    header {
+    padding-top: 10px;  
+    height: 65px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .logo {
+    height: 50px;  
+    width: 50px;
+    margin-top: 5px;
+  }
+  
+  .header-left {
+    float: left;
+  }
+
+  .header-left h3 {
+    font-weight: 650;
+    font-size: 20px;
+    line-height: 65px;
+    padding: 0 0 0 15px;
+    margin-top: 0;
+    color: white;
+    float: right;
+  }
+  
+  .header-right {
+    font-weight: 650;
+    float: right;
+    margin-left: -25px;
+  }
+  
+  .header-right a {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 65px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+  }
+  
+  .header-right a:hover {
+    /* background-color: rgba(255, 255, 255, 0.3); */
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0, 0.575);
+    color: white;
+  }
+
+  
+    /* ========= CSS DIV class top-wrapper ========= */
+
+    @keyframes lesson {
+      0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+      40% {transform: translateY(-40px);} 
+      60% {transform: translateY(-15px);} 
+      }
+
+  .profile {
+    height: 250px;
+    width: 250px;
+    border: 4px solid brown;
+    border-radius: 50%;
+    box-shadow: 4px 7px rgba(0, 0, 0, 0.5);
+    animation: lesson; 
+    animation-duration: 2s;
+    animation-delay: 3s;  
+    animation-fill-mode: both; 
+    animation-iteration-count: infinite;
+  }
+
+  .top-wrapper {
+    padding: 100px 0 130px 0;
+    background-image: url(asset/Optimized-178440.jpg);
+    color: white;
+    text-align: center;
+
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .top-wrapper h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 5px;
+    background: rgba(0, 0, 0, 0.575);
+    border-radius: 20px;
+    margin: 20px 280px;
+    padding: 15px 20px;
+  }
+
+  .btn {
+    padding: 12px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
+  
+  .fa {
+    margin-right: 5px;
+  }
+  
+  
+    /* CSS DIV class about-wrapper */
+
+  
+  .about-wrapper{
+    padding: 50px 30px 150px 30px;
+    background-color: #fef6ef;
+    background-size: 800px 500px;
+    color: white;
+    text-align: left;
+  }
+
+  .about-wrapper img  {
+    height: 300px;  
+    width: 300px;
+    margin-top: 25px;
+    float: left;
+  }
+
+  .colomn {
+    padding-top: 35px;
+    padding-left: 320px;
+  }
+
+  .about-wrapper h1 {
+    text-transform: uppercase;
+    color: #5f5d60;
+    font-size: 40px;
+    letter-spacing: 5px;
+    margin-bottom: 40px;
+    display: block;
+  }
+    
+  .about-wrapper h2 {
+    color: #5f5d60;
+    font-size: 20px;
+    text-align: justify;
+    letter-spacing: normal;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+
+    /* ========= CSS DIV class lesson-wrapper ========= */
+
+
+  .lesson-wrapper {
+    background-image: url('asset/Optimized-830658.jpg');
+    background-size: cover;
+    padding-bottom: 100px;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .heading {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    color: white;
+  }
+  
+  .heading h2 {
+    font-size: 35px;
+    font-weight: bold;
+    padding: 15px 20px;
+    color: black;
+    background-size: 20px 20px 20px 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 6px 6px 6px 6px rgb(0, 0, 0, 0.575);
+  }
+
+  .lesson {
+    float: left;
+    width: 50%;
+  }
+  
+  .lesson-icon {
+    position: relative;    
+  }
+
+  .certificate {
+    width: 500px;
+    height: 350px;
+    position: relative;
+    box-shadow: 6px -4px 13px 6px rgb(0, 0, 0, 0.575);
+  }
+
+  .certificate:hover {
+    transform: scale(1.1);
+  }
+
+  .text-contents {
+    font-weight: bold;
+    text-align: center;
+    width: bold;
+    display: inline-block;
+    font-size: 17px;
+    color: black;
+    background: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 500px;
+    padding: 15px 157px;
+    margin: 0px 0px 52px 0px;
+    box-shadow: 6px -4px 13px 6px rgb(0, 0, 0, 0.575);
+  }
+
+
+    /* ========= CSS DIV Class skill-wrapper ========= */
+
+
+  .skill-wrapper {
+    margin: 0px 65px 100px 65px;
+    padding: 50px 30px 150px 30px;
+    background-color: white;
+    background-size: 800px 500px;
+    text-align: center;    
+  }
+
+  .heading-skill {
+    color: #5f5d60;
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin-bottom: 53px;
+  }
+
+  .skills {
+    background-color: rgb(0, 0, 0, 0.575);
+    border-radius: 20px;
+  }
+
+  .skill {
+    float: left;
+    width: 50%;
+    animation: lesson; 
+    animation-duration: 2s;
+    animation-delay: 3s; 
+    animation-iteration-count: infinite;
+  }
+    
+  .skill-icon {
+    padding-top: 10px;
+    height: 200px;
+    position: relative;    
+  }
+
+  .skill-image {
+    width: 150px;
+    height: 125px;
+    position: relative;
+  }
+
+
+    /* ========= CSS DIV Class message-wrapper ========= */
+
+
+  .heading h2 {
+    font-weight: bold; 
+  }
+
+  .heading h3 {
+    color: #28a745;
+    font-weight: bold;
+    font-family: Courier;
+  }  
+
+  .heading h4 {
+    color: black;
+    font-weight: bold;
+  }
+
+  .info{
+    margin: 65px 425px;
+    padding: 40px 40px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 6px 6px 6px 6px rgb(0, 0, 0, 0.575);
+  }
+
+  .info:hover {
+    transform: scale(1.1);
+  }
+
+  .message-wrapper {
+    background-image: url(asset/Optimized-830588.jpg);
+    text-align: center;
+
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  
+    /* ========= CSS DIV Class footer ========= */
+
+
+  .scrollToTop {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #444;
+  }
+
+  footer p {
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    font-size: 14px;
+  }
+  
+  footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+  }
