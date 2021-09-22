@@ -28,6 +28,10 @@
     margin: auto 0;
   }
 
+  .lessons {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   .skills {
     display: block;
     width: 100%;
@@ -41,35 +45,94 @@
 /* Untuk Smartphone */
 @media all and (max-width: 670px) {
 
+  .header-left {
+    display: none;
+  }
+
+  .header-right {
+    font-size: 75%;
+    float: right;
+    margin-left: -25px;
+  }
+
   .top-wrapper h1{
     font-size: 25px;
   }
 
   .about-wrapper h1{
     font-size: 25px;
+    display: block;
+    margin-bottom: 10px;
   }
 
   .about-wrapper h2{
     font-size: 15px;
+    display: block;
   }
 
+  .about-wrapper img {
+    margin-top: 0px;
+    float: center;
+  }
+
+  .colomn {
+    vertical-align: top;
+    text-align: center;
+    padding-left: 0px;
+    padding-top: 0px;
+  }
+
+  .profile {
+    position: center;
+    height: auto;
+    width: 50%;
+    margin: 10px 0px;
+  }
+
+  .container h1{
+    margin: auto 0;
+  }
   .heading h2{
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .heading-skill h1{
     font-size: 25px;
   }
 
-  .lesson {
-    display: block;
-    width: 100%;
+  .lessons{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     margin: auto 0;
+    display: inline-block;
+    width: fit-content;
+  }
+
+  .certificate {
+    width: 350px;
+    height: 200px;
+  }
+
+  .text-contents {
+    width: 350px;
+    padding: 15px 0;
+    font-size: 15px;
+    margin-bottom: 15px;
   }
   
+  .lesson-icon {
+    position: relative;    
+  }
+
   .skills {
     display: block;
     width: 100%;
+  }
+
+  .skill-image {
+    width: 125px;
+    height: 100px;
+    margin-right: 10px;
   }
 
   .info{
