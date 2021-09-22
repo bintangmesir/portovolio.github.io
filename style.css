@@ -59,7 +59,7 @@
   }
   
   .header-right {
-    font-weight: 650;
+    font-weight: 10px;
     float: right;
     margin-left: -25px;
   }
@@ -166,6 +166,7 @@
   .colomn {
     padding-top: 35px;
     padding-left: 320px;
+
   }
 
   .about-wrapper h1 {
@@ -204,6 +205,10 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  .lesson-wrapper a {
+    color: black;
+  }
   
   .heading {
     padding-top: 80px;
@@ -222,9 +227,9 @@
     box-shadow: 6px 6px 6px 6px rgb(0, 0, 0, 0.575);
   }
 
-  .lesson {
-    float: left;
-    width: 50%;
+  .lessons{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
   
   .lesson-icon {
@@ -233,7 +238,7 @@
 
   .certificate {
     width: 500px;
-    height: 350px;
+    height: 385px;
     position: relative;
     box-shadow: 6px -4px 13px 6px rgb(0, 0, 0, 0.575);
   }
